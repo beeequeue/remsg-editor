@@ -3,42 +3,46 @@
     v-if="data == null"
     class="h-full w-full flex flex-col justify-center items-center"
   >
-    <div class="i-lucide:file-scan h-20 w-20" @click="openDialog" />
-    <div class="font-bold">Select file</div>
+    <label
+      ref="input$"
+      class="flex flex-col justify-center items-center h-75 w-75 p-8 cursor-pointer border-1 border-solid border-amber rounded-2xl"
+      @click="loadFile"
+    >
+      <span class="i-lucide:file-scan h-25 w-25" />
+      <span class="text-center font-bold">Select file</span>
+      <input type="file" class="hidden" @change="loadFile" />
+    </label>
   </div>
 
-  <div v-else>
-    <pre>{{ JSON.stringify(data, null, 2) }}</pre>
+  <div v-else class="h-full w-full overflow-auto">
+    <pre>{{ JSON.stringify(toShow, null, 2) }}</pre>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
+import { computed, ref } from "vue"
 import { type REMsg, decodeMsg } from "remsg"
-import { type DragDropEvent, getCurrentWebview } from "@tauri-apps/api/webview"
-import { open } from "@tauri-apps/plugin-dialog"
-import { readFile } from "@tauri-apps/plugin-fs"
+import { useElementHover } from "@vueuse/core"
 
-const hovering = ref(false)
+const input$ = ref<HTMLInputElement>()
+const hovering = useElementHover(input$)
 const data = ref<REMsg>()
 
-const openDialog = async () => {
-  const path = await open({ multiple: false, directory: false })
-  const file = await readFile(path)
-  const msg = decodeMsg(file)
+const loadFile = async (event: Event) => {
+  const files = (event.target as HTMLInputElement).files
+  if (files == null || files.length === 0) return
+
+  const msg = decodeMsg(Buffer.from(await files.item(0)!.arrayBuffer()))
 
   data.value = msg
 }
 
-getCurrentWebview().onDragDropEvent((event: { payload: DragDropEvent }) => {
-  if (event.payload.type === "over") {
-    hovering.value = true
-  } else if (event.payload.type === "drop") {
-    void loadFile(event.payload.paths[0])
-  } else {
-    hovering.value = false
-  }
-})
+const toShow = computed(() => ({
+  meta: data.value?.meta,
+  entries: Object.fromEntries(
+    data.value?.entries.map((entry) => [entry.name, entry.strings.en]) ?? [],
+  ),
+}))
 </script>
 
 <style>
