@@ -1,4 +1,4 @@
-# plexsync
+# remsg-inspector
 
 <!--
 [![npm](https://img.shields.io/npm/v/plexsync)](https://www.npmjs.com/package/plexsync)

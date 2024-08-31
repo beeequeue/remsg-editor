@@ -1,19 +1,16 @@
 {
-  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "app": {
     "security": {
       "csp": null
     },
     "windows": [
       {
-        "fullscreen": false,
-        "resizable": false,
         "decorations": true,
-        "transparent": true,
         "height": 700,
         "width": 800,
         "theme": "Dark",
-        "title": "PlexSync",
+        "title": "RE MSG Inspector",
         "dragDropEnabled": true
       }
     ]
@@ -46,8 +43,7 @@
       "timestampUrl": ""
     }
   },
-  "identifier": "com.beequeue.plexsync",
-  "plugins": {},
-  "productName": "plexsync",
+  "identifier": "com.beequeue.remsg-inspector",
+  "productName": "remsg-inspector",
   "version": "0.1.0"
 }

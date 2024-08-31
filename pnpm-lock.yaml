@@ -24,6 +24,9 @@ importers:
       '@tauri-apps/plugin-window-state':
         specifier: 2.0.0-rc.1
         version: 2.0.0-rc.1
+      remsg:
+        specifier: 0.0.0
+        version: 0.0.0
       vue:
         specifier: 3.4.38
         version: 3.4.38(typescript@5.5.4)
@@ -31,9 +34,18 @@ importers:
       '@antfu/eslint-config':
         specifier: 3.0.0
         version: 3.0.0(@typescript-eslint/utils@8.3.0(eslint@9.9.1(jiti@1.21.6))(typescript@5.5.4))(@vue/compiler-sfc@3.4.38)(eslint@9.9.1(jiti@1.21.6))(typescript@5.5.4)(vitest@1.6.0(@types/node@22.5.1)(terser@5.31.0))
+      '@iconify-json/lucide':
+        specifier: 1.1.209
+        version: 1.1.209
       '@tauri-apps/cli':
         specifier: 2.0.0-rc.8
         version: 2.0.0-rc.8
+      '@tauri-apps/plugin-dialog':
+        specifier: 2.0.0-rc.1
+        version: 2.0.0-rc.1
+      '@tauri-apps/plugin-fs':
+        specifier: 2.0.0-rc.2
+        version: 2.0.0-rc.2
       '@tsconfig/node22':
         specifier: 22.0.0
         version: 22.0.0
@@ -469,6 +481,9 @@ packages:
     resolution: {integrity: sha512-d2CGZR2o7fS6sWB7DG/3a95bGKQyHMACZ5aW8qGkkqQpUoZV6C0X7Pc7l4ZNMZkfNBf4VWNe9E1jRsf0G146Ew==}
     engines: {node: '>=18.18'}
 
+  '@iconify-json/lucide@1.1.209':
+    resolution: {integrity: sha512-B2w1Lz/03561yki/7x1fHQ+ElRSJ5rDqBd3HySXR5ajRtzPV1H3csd/QjHJlEp0j1/7nixSZHoxfHsBeHnTgcQ==}
+
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
@@ -691,6 +706,12 @@ packages:
 
   '@tauri-apps/plugin-clipboard-manager@2.1.0-beta.6':
     resolution: {integrity: sha512-MBuoVXPcq1yab4z6DGx7D44ntvr21taoozJnf1IHeXg864MnlCPeZj6fuDm+vF2o+3ac2sSZDZmo6PvrkLC8lQ==}
+
+  '@tauri-apps/plugin-dialog@2.0.0-rc.1':
+    resolution: {integrity: sha512-H28gh6BfZtjflHQ+HrmWwunDriBI3AQLAKnMs50GA6zeNUULqbQr7VXbAAKeJL/0CmWcecID4PKXVoSlaWRhEg==}
+
+  '@tauri-apps/plugin-fs@2.0.0-rc.2':
+    resolution: {integrity: sha512-TFjCfso3tN4b5s2EBjqP8N2gYrPh93Ds3VNKj8pCXv4wbvnItyfG0aHO0haUsedBOHQryDwv9vDAdPX6/T0a+g==}
 
   '@tauri-apps/plugin-shell@2.0.0-rc.1':
     resolution: {integrity: sha512-JtNROc0rqEwN/g93ig5pK4cl1vUo2yn+osCpY9de64cy/d9hRzof7AuYOgvt/Xcd5VPQmlgo2AGvUh5sQRSR1A==}
@@ -2063,6 +2084,10 @@ packages:
     resolution: {integrity: sha512-qx+xQGZVsy55CH0a1hiVwHmqjLryfh7wQyF5HO07XJ9f7dQMY/gPQHhlyDkIzJKC+x2fUCpCcUODUUUFrm7SHA==}
     hasBin: true
 
+  remsg@0.0.0:
+    resolution: {integrity: sha512-RYVRZuKx/jF9OCGQU1nCSY/SHerHAB4Tpa5q1oCZ/+IPbCflNnGczAqsArduJhzuqZni0IJP1QAg0p3U3Uqy8Q==}
+    engines: {node: '>=20'}
+
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
@@ -2909,6 +2934,10 @@ snapshots:
 
   '@humanwhocodes/retry@0.3.0': {}
 
+  '@iconify-json/lucide@1.1.209':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify/types@2.0.0': {}
 
   '@iconify/utils@2.1.32':
@@ -3087,6 +3116,14 @@ snapshots:
       '@tauri-apps/cli-win32-x64-msvc': 2.0.0-rc.8
 
   '@tauri-apps/plugin-clipboard-manager@2.1.0-beta.6':
+    dependencies:
+      '@tauri-apps/api': 2.0.0-rc.4
+
+  '@tauri-apps/plugin-dialog@2.0.0-rc.1':
+    dependencies:
+      '@tauri-apps/api': 2.0.0-rc.4
+
+  '@tauri-apps/plugin-fs@2.0.0-rc.2':
     dependencies:
       '@tauri-apps/api': 2.0.0-rc.4
 
@@ -4643,6 +4680,8 @@ snapshots:
   regjsparser@0.10.0:
     dependencies:
       jsesc: 0.5.0
+
+  remsg@0.0.0: {}
 
   require-directory@2.1.1: {}
 

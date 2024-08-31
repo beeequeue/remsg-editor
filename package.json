@@ -33,11 +33,15 @@
     "@tauri-apps/plugin-clipboard-manager": "2.1.0-beta.6",
     "@tauri-apps/plugin-shell": "2.0.0-rc.1",
     "@tauri-apps/plugin-window-state": "2.0.0-rc.1",
+    "remsg": "0.0.0",
     "vue": "3.4.38"
   },
   "devDependencies": {
     "@antfu/eslint-config": "3.0.0",
+    "@iconify-json/lucide": "1.1.209",
     "@tauri-apps/cli": "2.0.0-rc.8",
+    "@tauri-apps/plugin-dialog": "2.0.0-rc.1",
+    "@tauri-apps/plugin-fs": "2.0.0-rc.2",
     "@tsconfig/node22": "22.0.0",
     "@tsconfig/strictest": "2.0.5",
     "@types/node": "22.5.1",
