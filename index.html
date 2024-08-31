@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>PlexSync</title>
+    <meta name="description" content="good" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="/icon.png" sizes="any" type="image/png" />
+    <meta name="theme-color" content="#111" />
+
+    <style>
+      html {
+        background: #111;
+        color: #eee;
+      }
+
+      body {
+        --at-apply: font-sans;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        --at-apply: font-serif;
+      }
+
+      *:focus {
+        outline: none;
+      }
+
+      html,
+      body,
+      #root {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 100% !important;
+        min-height: 100% !important;
+        max-height: 100% !important;
+        width: 100%;
+        overflow: hidden;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

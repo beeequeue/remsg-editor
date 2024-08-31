@@ -1,0 +1,53 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "app": {
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": false,
+        "decorations": true,
+        "transparent": true,
+        "height": 700,
+        "width": 800,
+        "theme": "Dark",
+        "title": "PlexSync",
+        "dragDropEnabled": true
+      }
+    ]
+  },
+  "build": {
+    "beforeBuildCommand": "pnpm vite build",
+    "beforeDevCommand": "pnpm vite",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../dist"
+  },
+  "bundle": {
+    "active": true,
+    "category": "DeveloperTool",
+    "copyright": "",
+    "externalBin": [],
+    "icon": ["icons/icon.png", "icons/icon.ico"],
+    "macOS": {
+      "entitlements": null,
+      "exceptionDomain": "",
+      "frameworks": [],
+      "providerShortName": null,
+      "signingIdentity": null
+    },
+    "resources": [],
+    "shortDescription": "",
+    "targets": "all",
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": ""
+    }
+  },
+  "identifier": "com.beequeue.plexsync",
+  "plugins": {},
+  "productName": "plexsync",
+  "version": "0.1.0"
+}

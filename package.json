@@ -1,0 +1,60 @@
+{
+  "name": "remsg-inspector",
+  "type": "module",
+  "version": "0.0.0",
+  "author": "BeeeQueue <adam@haglund.dev>",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "pnpm@9.9.0",
+  "engines": {
+    "node": "^22"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,json5,yaml,yml,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
+  "scripts": {
+    "bops": "pnpm --silent run -r --filter ./bops build",
+    "build": "tauri build",
+    "dev": "tauri dev",
+    "lint": "eslint src",
+    "test": "tsx --test src/**/*.test.ts",
+    "typecheck": "vue-tsc --noEmit --project tsconfig.json"
+  },
+  "resolutions": {
+    "esbuild": "0.23.1"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "2.0.0-rc.4",
+    "@tauri-apps/plugin-clipboard-manager": "2.1.0-beta.6",
+    "@tauri-apps/plugin-shell": "2.0.0-rc.1",
+    "@tauri-apps/plugin-window-state": "2.0.0-rc.1",
+    "vue": "3.4.38"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "3.0.0",
+    "@tauri-apps/cli": "2.0.0-rc.8",
+    "@tsconfig/node22": "22.0.0",
+    "@tsconfig/strictest": "2.0.5",
+    "@types/node": "22.5.1",
+    "@unocss/reset": "0.62.3",
+    "@vitejs/plugin-vue": "5.1.3",
+    "eslint": "9.9.1",
+    "lint-staged": "15.2.9",
+    "prettier": "3.3.3",
+    "simple-git-hooks": "2.11.1",
+    "typescript": "5.5.4",
+    "unocss": "0.62.3",
+    "vite": "5.4.2",
+    "vue-tsc": "2.1.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "is-core-module": "npm:@nolyfill/is-core-module@^1"
+    }
+  }
+}
