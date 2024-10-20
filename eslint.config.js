@@ -2,14 +2,8 @@ import antfu from "@antfu/eslint-config"
 
 export default antfu({
   stylistic: false,
-  vue: {
-    overrides: {
-      "no-console": "off",
-      "vue/block-order": ["error", { order: ["template", "script", "style"] }],
-      "vue/html-self-closing": "off",
-      "vue/singleline-html-element-content-newline": "off",
-    },
-  },
+  svelte: true,
+  vue: false,
   test: { overrides: { "test/no-import-node-test": "off" } },
   typescript: {
     tsconfigPath: "tsconfig.json",

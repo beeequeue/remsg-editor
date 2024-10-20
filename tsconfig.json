@@ -25,9 +25,9 @@
 
     // Extra types
     "lib": ["dom", "es2023"],
-    "types": ["vite/client", "unplugin-vue-router/client", "vite-plugin-pwa/client"]
+    "types": ["vite/client", "vite-plugin-pwa/client"]
   },
 
-  "include": ["./src/**/*.ts", "./src/**/*.vue", "./typed-router.d.ts"],
+  "include": ["./src/**/*.ts", "./src/**/*.svelte"],
   "exclude": ["node_modules", "dist"]
 }
