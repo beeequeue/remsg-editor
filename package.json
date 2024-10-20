@@ -28,27 +28,60 @@
     "esbuild": "0.24.0"
   },
   "dependencies": {
-    "remsg": "1.0.0"
+    "remsg": "1.0.0",
+    "svelte": "5.0.5"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "3.0.0",
-    "@iconify-json/lucide": "1.1.209",
+    "@antfu/eslint-config": "3.8.0",
+    "@iconify-json/lucide": "1.2.10",
+    "@sveltejs/vite-plugin-svelte": "4.0.0",
     "@tsconfig/node22": "22.0.0",
     "@tsconfig/strictest": "2.0.5",
-    "@types/node": "22.5.1",
-    "@unocss/reset": "0.62.3",
-    "eslint": "9.9.1",
-    "lint-staged": "15.2.9",
+    "@types/node": "22.7.9",
+    "@unocss/preset-icons": "0.63.6",
+    "@unocss/preset-uno": "0.63.6",
+    "@unocss/preset-web-fonts": "0.63.6",
+    "@unocss/reset": "0.63.6",
+    "@unocss/transformer-directives": "0.63.6",
+    "@unocss/vite": "0.63.6",
+    "eslint": "9.13.0",
+    "eslint-plugin-svelte": "2.46.0",
+    "lint-staged": "15.2.10",
     "prettier": "3.3.3",
     "simple-git-hooks": "2.11.1",
-    "typescript": "5.5.4",
-    "unocss": "0.62.3",
-    "vite": "5.4.2",
+    "typescript": "5.6.3",
+    "vite": "5.4.10",
     "vite-plugin-node-polyfills": "0.22.0"
   },
   "pnpm": {
     "overrides": {
-      "is-core-module": "npm:@nolyfill/is-core-module@^1"
+      "assert": "npm:@socketregistry/assert@^1",
+      "available-typed-arrays": "npm:@socketregistry/available-typed-arrays@^1",
+      "define-properties": "npm:@socketregistry/define-properties@^1",
+      "es-define-property": "npm:@socketregistry/es-define-property@^1",
+      "for-each": "npm:@socketregistry/for-each@^1",
+      "function-bind": "npm:@socketregistry/function-bind@^1",
+      "gopd": "npm:@socketregistry/gopd@^1",
+      "has-property-descriptors": "npm:@socketregistry/has-property-descriptors@^1",
+      "has-proto": "npm:@socketregistry/has-proto@^1",
+      "has-symbols": "npm:@socketregistry/has-symbols@^1",
+      "has-tostringtag": "npm:@socketregistry/has-tostringtag@^1",
+      "hasown": "npm:@socketregistry/hasown@^1",
+      "indent-string": "npm:@socketregistry/indent-string@^1",
+      "is-arguments": "npm:@socketregistry/is-arguments@^1",
+      "is-core-module": "npm:@socketregistry/is-core-module@^1",
+      "is-generator-function": "npm:@socketregistry/is-generator-function@^1",
+      "is-nan": "npm:@socketregistry/is-nan@^1",
+      "is-typed-array": "npm:@socketregistry/is-typed-array@^1",
+      "isarray": "npm:@socketregistry/isarray@^1",
+      "object-is": "npm:@socketregistry/object-is@^1",
+      "object-keys": "npm:@socketregistry/object-keys@^1",
+      "object.assign": "npm:@socketregistry/object.assign@^1",
+      "path-parse": "npm:@socketregistry/path-parse@^1",
+      "safe-buffer": "npm:@socketregistry/safe-buffer@^1",
+      "set-function-length": "npm:@socketregistry/set-function-length@^1",
+      "side-channel": "npm:@socketregistry/side-channel@^1",
+      "which-typed-array": "npm:@socketregistry/which-typed-array@^1"
     }
   }
 }
