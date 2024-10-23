@@ -1,10 +1,8 @@
-import {
-  defineConfig,
-  presetIcons,
-  presetUno,
-  presetWebFonts,
-  transformerDirectives,
-} from "unocss"
+import presetUno from "@unocss/preset-uno"
+import presetIcons from "@unocss/preset-icons"
+import presetWebFonts from "@unocss/preset-web-fonts"
+import transformerDirectives from "@unocss/transformer-directives"
+import { defineConfig } from "@unocss/vite"
 
 export default defineConfig({
   presets: [

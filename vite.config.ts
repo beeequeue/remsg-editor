@@ -1,12 +1,24 @@
-import unocss from "unocss/vite"
-import vue from "@vitejs/plugin-vue"
+import unocss from "@unocss/vite"
 import { defineConfig } from "vite"
-import { nodePolyfills } from "vite-plugin-node-polyfills"
+import { svelte } from "@sveltejs/vite-plugin-svelte"
+import inject from "@rollup/plugin-inject"
+import path from "node:path"
 
-export default defineConfig(({ command }) => ({
-  build: {
-    target: "edge122",
+export default defineConfig(({}) => ({
+  build: { target: "ff125" },
+
+  resolve: {
+    alias: {
+      "node:buffer": path.resolve("./node_modules/buffer"),
+      "buffer": path.resolve("./node_modules/buffer"),
+    }
   },
 
-  plugins: [vue(), unocss(), nodePolyfills()],
+  plugins: [
+    svelte(),
+    unocss(),
+    inject({
+      Buffer: ["buffer"],
+    }),
+  ],
 }))

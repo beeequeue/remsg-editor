@@ -2,7 +2,11 @@ import antfu from "@antfu/eslint-config"
 
 export default antfu({
   stylistic: false,
-  svelte: true,
+  svelte: {
+    overrides: {
+      "no-use-before-define": "off",
+    },
+  },
   vue: false,
   test: { overrides: { "test/no-import-node-test": "off" } },
   typescript: {
