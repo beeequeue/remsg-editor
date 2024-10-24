@@ -19,6 +19,7 @@
     "exactOptionalPropertyTypes": false,
 
     // Extra types
+    "lib": ["es2023"],
     "types": ["vite/client", "vite-plugin-pwa/client"]
   },
 

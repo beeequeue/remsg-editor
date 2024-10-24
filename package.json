@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "remsg": "1.0.0",
-    "svelte": "5.0.5"
+    "svelte": "5.0.5",
+    "svelte-multiselect": "11.0.0-rc.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "3.8.0",

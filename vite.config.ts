@@ -5,13 +5,13 @@ import inject from "@rollup/plugin-inject"
 import path from "node:path"
 
 export default defineConfig(({}) => ({
-  build: { target: "ff125" },
+  build: { target: "firefox125" },
 
   resolve: {
     alias: {
       "node:buffer": path.resolve("./node_modules/buffer"),
-      "buffer": path.resolve("./node_modules/buffer"),
-    }
+      buffer: path.resolve("./node_modules/buffer"),
+    },
   },
 
   plugins: [
