@@ -110,7 +110,7 @@
         placeholder="Languages"
         options={relevantLanguages}
         bind:selected={selectedLanguages}
-        outerDivClass="w-300px min-h-32px"
+        outerDivClass="w-300px min-h-32px b-color-amber"
         liOptionClass="color-#eee bg-#333"
       />
     </div>
@@ -126,6 +126,10 @@
 <style>
   :global(html) {
     user-select: none;
+  }
+
+  :global(button), :global(input) {
+    border-color: rgb(251 191 36);
   }
 
   :global(a) {

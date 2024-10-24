@@ -1,8 +1,10 @@
-import unocss from "@unocss/vite"
-import { defineConfig } from "vite"
-import { svelte } from "@sveltejs/vite-plugin-svelte"
-import inject from "@rollup/plugin-inject"
 import path from "node:path"
+
+import { defineConfig } from "vite"
+
+import inject from "@rollup/plugin-inject"
+import { svelte } from "@sveltejs/vite-plugin-svelte"
+import unocss from "@unocss/vite"
 
 export default defineConfig(({}) => ({
   build: { target: "firefox125" },
@@ -14,11 +16,5 @@ export default defineConfig(({}) => ({
     },
   },
 
-  plugins: [
-    svelte(),
-    unocss(),
-    inject({
-      Buffer: ["buffer"],
-    }),
-  ],
+  plugins: [svelte(), unocss(), inject({ Buffer: ["buffer"] })],
 }))
