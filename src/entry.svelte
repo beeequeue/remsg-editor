@@ -19,7 +19,7 @@
       {#each languages as language}
         <div>{language}</div>
         <textarea
-          class="h-100px bg-#33221166 shadow-#00000099 rounded-lg b-color-amber p-3 shadow-md"
+          class="h-100px bg-#33221166 shadow-#00000099 b-color-amber rounded-lg p-3 shadow-md"
           bind:value={entry.strings[language as never]}
         ></textarea>
       {/each}

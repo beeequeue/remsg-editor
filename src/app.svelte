@@ -2,6 +2,7 @@
   // eslint-disable-next-line unicorn/prefer-node-protocol
   import { Buffer } from "buffer"
   import { decodeMsg, encodeMsg, type REMsg } from "remsg"
+  import { fade } from "svelte/transition"
   import MultiSelect, { type Option } from "svelte-multiselect"
   import Entry from "./entry.svelte"
   import { db } from "./state.svelte.js"
@@ -45,7 +46,16 @@
     }
   }
 
-  const ondragover = (event: Event) => event.preventDefault()
+  let dragging = $state<boolean | string>(false)
+
+  const ondragover = (event: Event) => {
+    dragging = true
+    event.preventDefault()
+  }
+
+  const ondragleave = () => {
+    dragging = false
+  }
 
   const ondrop = async (event: DragEvent & { currentTarget: HTMLDivElement }) => {
     event.preventDefault()
@@ -58,6 +68,8 @@
       meta: remsg.meta,
       entries,
     }
+
+    dragging = false
   }
 
   const exportFile = () => {
@@ -88,14 +100,32 @@
   class="flex h-full w-full flex-col items-center justify-center"
   {ondrop}
   {ondragover}
+  {ondragleave}
 >
+  {#if dragging}
+    <div
+      transition:fade={{ duration: 100 }}
+      class="l-0 t-0 bg-amber-9 bg-op-25 z-100 fixed flex h-full w-full items-center justify-center"
+    >
+      <div
+        class="w-350px max-w-80% h-250px text-30px bg-#111 text-shadow-lg border-3px border-amber-4 rounded-30px flex items-center justify-center border-dashed font-bold shadow-lg"
+      >
+        Drop file
+      </div>
+    </div>
+  {/if}
+
   {#if db?.file == null}
     <label
       for="file"
       class="h-75 w-75 border-1 border-amber flex cursor-pointer flex-col items-center justify-center rounded-2xl border-solid p-8"
     >
       <span class="i-lucide:file-scan h-25 w-25"></span>
-      <span class="text-center font-bold">Select file</span>
+      <span class="text-center font-bold">
+        Select/Drop
+        <br />
+        *.msg.* file
+      </span>
     </label>
   {:else}
     <h1 class="m-0">{db.file.name}</h1>
@@ -105,7 +135,7 @@
       <button class="cursor-pointer rounded-lg" onclick={exportFile}>Export</button>
     </div>
 
-    <div class="mt-2">
+    <div class="mb-4 mt-2">
       <MultiSelect
         placeholder="Languages"
         options={relevantLanguages}
@@ -128,7 +158,8 @@
     user-select: none;
   }
 
-  :global(button), :global(input) {
+  :global(button),
+  :global(input) {
     border-color: rgb(251 191 36);
   }
 
