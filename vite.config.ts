@@ -16,11 +16,9 @@ export default defineConfig({
       output: {
         manualChunks: (id, { getModuleInfo }) => {
           if (id.includes("node_modules")) {
-            if ((getModuleInfo(id)?.code?.length ?? 0) < 1000) {
-              return "vendor"
+            if (id.includes("/svelte/")) {
+              return "svelte"
             }
-
-            return moduleNameRegex.exec(id)?.[1] ?? "vendor"
           }
         },
       },
