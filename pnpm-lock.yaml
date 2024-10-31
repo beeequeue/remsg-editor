@@ -17,8 +17,8 @@ importers:
   .:
     dependencies:
       remsg:
-        specifier: 1.0.0
-        version: 1.0.0
+        specifier: 1.1.0
+        version: 1.1.0
       svelte:
         specifier: 5.1.8
         version: 5.1.8
@@ -2989,8 +2989,8 @@ packages:
     resolution: {integrity: sha512-3OGZZ4HoLJkkAZx/48mTXJNlmqTGOzc0o9OWQPuWpkOlXXPbyN6OafCcoXUnBqE2D3f/T5L+pWc1kdEmnfnRsA==}
     hasBin: true
 
-  remsg@1.0.0:
-    resolution: {integrity: sha512-ZyLXvyf+os5hftQIsw/hosDydLNtoEXrS2nBQobYC1RiL98fwdTtylmwy34BXrvxthJrEcvWnpbgRbjYr+Df1Q==}
+  remsg@1.1.0:
+    resolution: {integrity: sha512-HESKiciDGFlR5U3lS4zLk2J9run7rzEM79wm9RbrJBg7GsZrQ2kh+FXXLtKpAgFpmr2d/jkX6xSxpdSxBau1qQ==}
     engines: {node: '>=20'}
 
   require-directory@2.1.1:
@@ -6987,7 +6987,7 @@ snapshots:
     dependencies:
       jsesc: 3.0.2
 
-  remsg@1.0.0: {}
+  remsg@1.1.0: {}
 
   require-directory@2.1.1: {}
 

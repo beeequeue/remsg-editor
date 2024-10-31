@@ -28,7 +28,7 @@
     "esbuild": "0.24.0"
   },
   "dependencies": {
-    "remsg": "1.0.0",
+    "remsg": "1.1.0",
     "svelte": "5.1.8",
     "svelte-multiselect": "11.0.0-rc.1"
   },
