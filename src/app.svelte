@@ -158,7 +158,7 @@
     <div class="flex items-center gap-10">
       <div>Version {db.file.meta.version}</div>
       <div>{db.file.meta.attributes.length} attributes</div>
-      <button class="cursor-pointer rounded-lg" onclick={exportFile}>Export</button>
+      <button class="cursor-pointer rounded-lg b-solid b-1 b-amber" onclick={exportFile}>Export</button>
     </div>
 
     <div class="mb-4 mt-2">
@@ -182,11 +182,6 @@
 <style>
   :global(html) {
     user-select: none;
-  }
-
-  :global(button),
-  :global(input) {
-    border-color: rgb(251 191 36);
   }
 
   :global(a) {
