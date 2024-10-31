@@ -9,6 +9,15 @@
 
   const entries = $derived(Object.values(db.file?.entries ?? {}))
 
+  let error = $state(false)
+  $effect(() => {
+    if (!error) return
+
+    setTimeout(() => {
+      error = false
+    }, 7500)
+  })
+
   const relevantLanguages = $derived.by((): Option[] => {
     const languages = Object.keys(
       entries[0].strings,
@@ -59,14 +68,22 @@
 
   const ondrop = async (event: DragEvent & { currentTarget: HTMLDivElement }) => {
     event.preventDefault()
-    const file = event.dataTransfer!.items[0].getAsFile()!
-    const remsg = decodeMsg(Buffer.from(await file.arrayBuffer()))
-    const entries = Object.fromEntries(remsg.entries.map((entry) => [entry.name, entry]))
+    error = false
 
-    db.file = {
-      name: file.name,
-      meta: remsg.meta,
-      entries,
+    try {
+      const file = event.dataTransfer!.items[0].getAsFile()!
+      const remsg = decodeMsg(Buffer.from(await file.arrayBuffer()))
+      const entries = Object.fromEntries(
+        remsg.entries.map((entry) => [entry.name, entry]),
+      )
+
+      db.file = {
+        name: file.name,
+        meta: remsg.meta,
+        entries,
+      }
+    } catch {
+      error = true
     }
 
     dragging = false
@@ -105,20 +122,29 @@
   {#if dragging}
     <div
       transition:fade={{ duration: 100 }}
-      class="l-0 t-0 bg-amber-9 bg-op-25 z-100 fixed flex h-full w-full items-center justify-center"
+      class="bg-amber-9 bg-op-25 z-100 fixed flex h-full w-full items-center justify-center"
     >
       <div
-        class="w-350px max-w-80% h-250px text-30px bg-#111 text-shadow-lg border-3px border-amber-4 rounded-30px flex items-center justify-center border-dashed font-bold shadow-lg"
+        class="w-350px max-w-80% h-250px text-30px bg-#111 text-shadow-lg b-3px b-amber-4 rounded-30px b-dashed flex items-center justify-center font-bold shadow-lg"
       >
         Drop file
       </div>
     </div>
   {/if}
 
+  {#if error}
+    <div
+      transition:fade={{ duration: 250 }}
+      class="b-3 b-1px b-solid b-red-5 fixed bottom-8 right-8 z-50 flex items-center justify-center rounded-lg bg-red-950 px-5 py-3"
+    >
+      Invalid file
+    </div>
+  {/if}
+
   {#if db?.file == null}
     <label
       for="file"
-      class="h-75 w-75 border-1 border-amber flex cursor-pointer flex-col items-center justify-center rounded-2xl border-solid p-8"
+      class="h-75 w-75 b-1 b-amber b-solid flex cursor-pointer flex-col items-center justify-center rounded-2xl p-8"
     >
       <span class="i-lucide:file-scan h-25 w-25"></span>
       <span class="text-center font-bold">
