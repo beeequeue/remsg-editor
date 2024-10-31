@@ -158,7 +158,9 @@
     <div class="flex items-center gap-10">
       <div>Version {db.file.meta.version}</div>
       <div>{db.file.meta.attributes.length} attributes</div>
-      <button class="cursor-pointer rounded-lg b-solid b-1 b-amber" onclick={exportFile}>Export</button>
+      <button class="b-solid b-1 b-amber cursor-pointer rounded-lg" onclick={exportFile}>
+        Export
+      </button>
     </div>
 
     <div class="mb-4 mt-2">
@@ -177,6 +179,16 @@
       {/each}
     </div>
   {/if}
+
+  <a
+    target="_blank"
+    rel="noopener"
+    href="https://github.com/beeequeue/remsg-editor"
+    class="fixed bottom-2 flex items-center text-#eee"
+  >
+    <div class="i-simple-icons:github mr-1"></div>
+    Made by beequeue
+  </a>
 </div>
 
 <style>
