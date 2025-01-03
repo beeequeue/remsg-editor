@@ -8,7 +8,7 @@ export default antfu({
   jsx: false,
   toml: false,
   yaml: false,
-  test: { overrides: { "test/no-import-node-test": "off" } },
+  test: false,
   typescript: {
     tsconfigPath: "tsconfig.json",
     overrides: {

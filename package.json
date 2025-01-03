@@ -64,7 +64,6 @@
       "@eslint/markdown": "-",
       "@stylistic/eslint-plugin": "-",
       "@vitest/eslint-plugin": "-",
-      "eslint-plugin-jsdoc": "-",
       "eslint-plugin-jsonc": "-",
       "eslint-plugin-toml": "-",
       "eslint-plugin-vue": "-",
