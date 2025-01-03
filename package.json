@@ -73,11 +73,9 @@
       "jsonc-eslint-parser": "-",
       "toml-eslint-parser": "-",
       "yaml-eslint-parser": "-",
-      "function-bind": "npm:@socketregistry/function-bind@^1",
-      "hasown": "npm:@socketregistry/hasown@^1",
-      "indent-string": "npm:@socketregistry/indent-string@^1",
-      "is-core-module": "npm:@socketregistry/is-core-module@^1",
-      "path-parse": "npm:@socketregistry/path-parse@^1"
+      "is-core-module": "npm:@nolyfill/is-core-module@^1",
+      "safe-buffer": "npm:@nolyfill/safe-buffer@^1",
+      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@^1"
     }
   }
 }
