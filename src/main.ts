@@ -10,6 +10,6 @@ import "@unocss/reset/sanitize/typography.css"
 import "@unocss/reset/sanitize/reduce-motion.css"
 
 export const app = mount(App, {
-  // eslint-disable-next-line ts/no-unsafe-assignment, ts/no-unsafe-call, ts/no-unsafe-member-access
+  // eslint-disable-next-line ts/no-unsafe-call, ts/no-unsafe-member-access
   target: document.getElementById("root")!,
 })
