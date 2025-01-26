@@ -89,7 +89,7 @@
     dragging = false
   }
 
-  const exportFile = () => {
+  const exportFile = (format: "json" | "msg") => () => {
     if (db.file == null) return
 
     const entries = Object.values(db.file.entries)
@@ -98,12 +98,23 @@
       entries,
     } satisfies REMsg
 
-    const remsgBuffer = encodeMsg(remsg)
-    const blob = new Blob([remsgBuffer], { type: "application/octet-stream" })
+    let blob: Blob
+    if (format === "msg") {
+      const data = encodeMsg(remsg)
+      blob = new Blob([data], { type: "application/octet-stream" })
+    } else {
+      const data = JSON.stringify(remsg, null, 2)
+      blob = new Blob([data], { type: "application/json" })
+    }
+
     const url = URL.createObjectURL(blob)
     const a = document.createElement("a")
     a.href = url
     a.download = db.file.name
+    if (format === "json") {
+      a.download += ".json"
+    }
+
     a.click()
     URL.revokeObjectURL(url)
     a.remove()
@@ -155,11 +166,15 @@
     </label>
   {:else}
     <h1 class="m-0">{db.file.name}</h1>
-    <div class="flex items-center gap-10">
+    <div class="flex items-center gap-6">
       <div>Version {db.file.meta.version}</div>
       <div>{db.file.meta.attributes.length} attributes</div>
-      <button class="b-solid b-1 b-amber cursor-pointer rounded-lg" onclick={exportFile}>
-        Export
+
+      <button class="b-solid b-1 b-amber cursor-pointer rounded-lg" onclick={exportFile("msg")}>
+        Export as msg
+      </button>
+      <button class="b-solid b-1 b-amber cursor-pointer rounded-lg" onclick={exportFile("json")}>
+        Export as json
       </button>
     </div>
 
