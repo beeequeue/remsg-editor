@@ -184,7 +184,7 @@
     target="_blank"
     rel="noopener"
     href="https://github.com/beeequeue/remsg-editor"
-    class="fixed bottom-2 flex items-center text-#eee"
+    class="text-#eee fixed bottom-2 flex items-center"
   >
     <div class="i-simple-icons:github mr-1"></div>
     Made by beequeue
