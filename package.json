@@ -57,7 +57,7 @@
     "svelte-check": "4.1.5",
     "typescript": "5.8.2",
     "vite": "6.2.6",
-    "vite-plugin-pwa": "0.21.2"
+    "vite-plugin-pwa": "1.0.0"
   },
   "pnpm": {
     "overrides": {
