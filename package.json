@@ -33,7 +33,7 @@
     "svelte-multiselect": "11.0.0-rc.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "4.11.0",
+    "@antfu/eslint-config": "4.12.0",
     "@iconify-json/lucide": "1.2.39",
     "@iconify-json/simple-icons": "1.2.33",
     "@rollup/plugin-inject": "5.0.5",
@@ -47,9 +47,9 @@
     "@unocss/transformer-directives": "65.5.0",
     "@unocss/vite": "65.5.0",
     "buffer": "6.0.3",
-    "eslint": "9.23.0",
-    "eslint-plugin-svelte": "3.5.0",
-    "lint-staged": "15.5.0",
+    "eslint": "9.25.1",
+    "eslint-plugin-svelte": "3.5.1",
+    "lint-staged": "15.5.1",
     "prettier": "3.5.3",
     "prettier-plugin-svelte": "3.3.3",
     "prettier-plugin-tailwindcss": "0.6.11",
