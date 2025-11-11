@@ -33,7 +33,7 @@
     "svelte-multiselect": "11.2.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "5.4.1",
+    "@antfu/eslint-config": "6.2.0",
     "@iconify-json/lucide": "1.2.71",
     "@iconify-json/simple-icons": "1.2.56",
     "@rollup/plugin-inject": "5.0.5",
