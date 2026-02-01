@@ -5,7 +5,7 @@
   "author": "BeeeQueue <adam@haglund.dev>",
   "license": "MIT",
   "private": true,
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.28.2",
   "engines": {
     "node": "^22"
   },
@@ -25,38 +25,38 @@
     "typecheck": "svelte-check"
   },
   "resolutions": {
-    "esbuild": "0.27.0"
+    "esbuild": "0.27.2"
   },
   "dependencies": {
-    "remsg": "1.1.0",
-    "svelte": "5.45.2",
-    "svelte-multiselect": "11.3.0"
+    "remsg": "1.1.1",
+    "svelte": "5.49.1",
+    "svelte-multiselect": "11.6.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "5.4.1",
-    "@iconify-json/lucide": "1.2.77",
-    "@iconify-json/simple-icons": "1.2.60",
+    "@iconify-json/lucide": "1.2.87",
+    "@iconify-json/simple-icons": "1.2.68",
     "@rollup/plugin-inject": "5.0.5",
-    "@sveltejs/vite-plugin-svelte": "6.2.1",
+    "@sveltejs/vite-plugin-svelte": "6.2.4",
     "@tsconfig/strictest": "2.0.8",
     "@tsconfig/svelte": "5.0.6",
-    "@unocss/preset-icons": "66.5.9",
-    "@unocss/preset-uno": "66.5.9",
-    "@unocss/preset-web-fonts": "66.5.9",
-    "@unocss/reset": "66.5.9",
-    "@unocss/transformer-directives": "66.5.9",
-    "@unocss/vite": "66.5.9",
+    "@unocss/preset-icons": "66.6.0",
+    "@unocss/preset-uno": "66.6.0",
+    "@unocss/preset-web-fonts": "66.6.0",
+    "@unocss/reset": "66.6.0",
+    "@unocss/transformer-directives": "66.6.0",
+    "@unocss/vite": "66.6.0",
     "buffer": "6.0.3",
     "eslint": "9.39.1",
     "eslint-plugin-svelte": "3.13.0",
     "lint-staged": "16.2.7",
-    "prettier": "3.7.3",
-    "prettier-plugin-svelte": "3.4.0",
-    "prettier-plugin-tailwindcss": "0.7.1",
+    "prettier": "3.8.1",
+    "prettier-plugin-svelte": "3.4.1",
+    "prettier-plugin-tailwindcss": "0.7.2",
     "simple-git-hooks": "2.13.1",
-    "svelte-check": "4.3.4",
+    "svelte-check": "4.3.6",
     "typescript": "5.9.3",
-    "vite": "7.2.4",
+    "vite": "7.3.1",
     "vite-plugin-pwa": "1.2.0"
   },
   "pnpm": {
