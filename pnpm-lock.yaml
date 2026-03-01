@@ -17,9 +17,9 @@ overrides:
   jsonc-eslint-parser: '-'
   toml-eslint-parser: '-'
   yaml-eslint-parser: '-'
-  is-core-module: npm:@nolyfill/is-core-module@^1
-  safe-buffer: npm:@nolyfill/safe-buffer@^1
-  string.prototype.matchall: npm:@nolyfill/string.prototype.matchall@^1
+  is-core-module: npm:@nolyfill/is-core-module@1.0.39
+  safe-buffer: npm:@nolyfill/safe-buffer@1.0.44
+  string.prototype.matchall: npm:@nolyfill/string.prototype.matchall@1.0.44
 
 importers:
 
@@ -969,15 +969,15 @@ packages:
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
 
-  '@nolyfill/safe-buffer@1.0.41':
-    resolution: {integrity: sha512-QUutoN6a0Rf49n6kYVSppQpfraXfrtrUaxTU/GhcxIhz+3GHp+SrBVnTKE3ASB7AzgZJ7XrxhaBgwrF+hSmeKg==}
+  '@nolyfill/safe-buffer@1.0.44':
+    resolution: {integrity: sha512-SqlKXtlhNTDMeZKey9jnnuPhi8YTl1lJuEcY9zbm5i4Pqe79UJJ8IJ9oiD6DhgI8KjYc+HtLzpQJNRdNYqb/hw==}
     engines: {node: '>=12.4.0'}
 
-  '@nolyfill/shared@1.0.28':
-    resolution: {integrity: sha512-UJTshFMDgugBcYXGLopbL1enYpGREOEfjUMQKLPLeJqWfbfElGtYbGbUcucCENa7cicGo3M5u/DnPiZe/PYQyw==}
+  '@nolyfill/shared@1.0.44':
+    resolution: {integrity: sha512-NI1zxDh4LYL7PYlKKCwojjuc5CEZslywrOTKBNyodjmWjRiZ4AlCMs3Gp+zDoPQPNkYCSQp/luNojHmJWWfCbw==}
 
-  '@nolyfill/string.prototype.matchall@1.0.28':
-    resolution: {integrity: sha512-k74WKi7WmtRV847QWlY1ndg6XU1loeAyO9+NVoXrd7RL5lEjBtovp4CPZkifipBMBrZrZu2WwrQqkGrvLNZYpw==}
+  '@nolyfill/string.prototype.matchall@1.0.44':
+    resolution: {integrity: sha512-/lwVUaDPCeopUL6XPz2B2ZwaQeIbctP8YxNIyCxunxVKWhCAhii+w0ourNK7JedyGIcM+DaXZTeRlcbgEWaZig==}
     engines: {node: '>=12.4.0'}
 
   '@polka/url@1.0.0-next.28':
@@ -3865,13 +3865,13 @@ snapshots:
 
   '@nolyfill/is-core-module@1.0.39': {}
 
-  '@nolyfill/safe-buffer@1.0.41': {}
+  '@nolyfill/safe-buffer@1.0.44': {}
 
-  '@nolyfill/shared@1.0.28': {}
+  '@nolyfill/shared@1.0.44': {}
 
-  '@nolyfill/string.prototype.matchall@1.0.28':
+  '@nolyfill/string.prototype.matchall@1.0.44':
     dependencies:
-      '@nolyfill/shared': 1.0.28
+      '@nolyfill/shared': 1.0.44
 
   '@polka/url@1.0.0-next.28': {}
 
@@ -4006,7 +4006,7 @@ snapshots:
       ejs: 3.1.10
       json5: 2.2.3
       magic-string: 0.25.9
-      string.prototype.matchall: '@nolyfill/string.prototype.matchall@1.0.28'
+      string.prototype.matchall: '@nolyfill/string.prototype.matchall@1.0.44'
 
   '@sveltejs/acorn-typescript@1.0.5(acorn@8.15.0)':
     dependencies:
@@ -5232,7 +5232,7 @@ snapshots:
 
   randombytes@2.1.0:
     dependencies:
-      safe-buffer: '@nolyfill/safe-buffer@1.0.41'
+      safe-buffer: '@nolyfill/safe-buffer@1.0.44'
 
   readdirp@4.1.1: {}
 
