@@ -49,7 +49,7 @@ importers:
         version: 5.0.5(rollup@2.79.2)
       '@sveltejs/vite-plugin-svelte':
         specifier: 6.2.4
-        version: 6.2.4(svelte@5.55.1)(vite@7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
+        version: 6.2.4(svelte@5.55.1)(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
       '@tsconfig/strictest':
         specifier: 2.0.8
         version: 2.0.8
@@ -73,7 +73,7 @@ importers:
         version: 66.6.7
       '@unocss/vite':
         specifier: 66.6.7
-        version: 66.6.7(vite@7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
+        version: 66.6.7(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
       buffer:
         specifier: 6.0.3
         version: 6.0.3
@@ -105,11 +105,11 @@ importers:
         specifier: 5.9.3
         version: 5.9.3
       vite:
-        specifier: 7.3.1
-        version: 7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
+        specifier: 7.3.2
+        version: 7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
       vite-plugin-pwa:
         specifier: 1.2.0
-        version: 1.2.0(vite@7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))(workbox-build@7.3.0)(workbox-window@7.3.0)
+        version: 1.2.0(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))(workbox-build@7.3.0)(workbox-window@7.3.0)
 
 packages:
 
@@ -2139,9 +2139,6 @@ packages:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
     engines: {node: '>=4'}
 
-  minimatch@3.1.2:
-    resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
-
   minimatch@3.1.5:
     resolution: {integrity: sha512-VgjWUsnnT6n+NUk6eZq77zeFdpW2LWDzP6zFGrCbHXiYNul5Dzqk2HHQ5uFH2DNW5Xbp8+jVzaeNt94ssEEl4w==}
 
@@ -2779,8 +2776,8 @@ packages:
       '@vite-pwa/assets-generator':
         optional: true
 
-  vite@7.3.1:
-    resolution: {integrity: sha512-w+N7Hifpc3gRjZ63vYBXA56dvvRlNWRczTdmCBBa+CotUzAPf5b7YMdMR/8CQoeYE5LX3W4wj6RYTgonm1b9DA==}
+  vite@7.3.2:
+    resolution: {integrity: sha512-Bby3NOsna2jsjfLVOHKes8sGwgl4TT0E6vvpYgnAYDIF/tie7MRaFthmKuHx1NSXjiTueXH3do80FMQgvEktRg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -4003,24 +4000,24 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@sveltejs/vite-plugin-svelte-inspector@5.0.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.1)(vite@7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)))(svelte@5.55.1)(vite@7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))':
+  '@sveltejs/vite-plugin-svelte-inspector@5.0.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.1)(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)))(svelte@5.55.1)(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 6.2.4(svelte@5.55.1)(vite@7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
+      '@sveltejs/vite-plugin-svelte': 6.2.4(svelte@5.55.1)(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
       debug: 4.4.3
       svelte: 5.55.1
-      vite: 7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
+      vite: 7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
     transitivePeerDependencies:
       - supports-color
 
-  '@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.1)(vite@7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))':
+  '@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.1)(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte-inspector': 5.0.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.1)(vite@7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)))(svelte@5.55.1)(vite@7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
+      '@sveltejs/vite-plugin-svelte-inspector': 5.0.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.1)(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)))(svelte@5.55.1)(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
       deepmerge: 4.3.1
       magic-string: 0.30.21
       obug: 2.1.1
       svelte: 5.55.1
-      vite: 7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
-      vitefu: 1.1.1(vite@7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
+      vite: 7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
+      vitefu: 1.1.1(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
     transitivePeerDependencies:
       - supports-color
 
@@ -4245,7 +4242,7 @@ snapshots:
       '@unocss/rule-utils': 66.6.7
       css-tree: 3.1.0
 
-  '@unocss/vite@66.6.7(vite@7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))':
+  '@unocss/vite@66.6.7(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))':
     dependencies:
       '@jridgewell/remapping': 2.3.5
       '@unocss/config': 66.6.7
@@ -4256,7 +4253,7 @@ snapshots:
       pathe: 2.0.3
       tinyglobby: 0.2.15
       unplugin-utils: 0.3.1
-      vite: 7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
+      vite: 7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
 
   acorn-jsx@5.3.2(acorn@8.15.0):
     dependencies:
@@ -4833,7 +4830,7 @@ snapshots:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.1.2
+      minimatch: 3.1.5
       once: 1.4.0
       path-is-absolute: 1.0.1
 
@@ -4916,7 +4913,7 @@ snapshots:
       async: 3.2.6
       chalk: 4.1.2
       filelist: 1.0.4
-      minimatch: 3.1.2
+      minimatch: 3.1.5
 
   jiti@2.6.1: {}
 
@@ -5043,10 +5040,6 @@ snapshots:
   mimic-function@5.0.1: {}
 
   min-indent@1.0.1: {}
-
-  minimatch@3.1.2:
-    dependencies:
-      brace-expansion: 1.1.11
 
   minimatch@3.1.5:
     dependencies:
@@ -5597,18 +5590,18 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-plugin-pwa@1.2.0(vite@7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))(workbox-build@7.3.0)(workbox-window@7.3.0):
+  vite-plugin-pwa@1.2.0(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))(workbox-build@7.3.0)(workbox-window@7.3.0):
     dependencies:
       debug: 4.4.3
       pretty-bytes: 6.1.1
       tinyglobby: 0.2.15
-      vite: 7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
+      vite: 7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
       workbox-build: 7.3.0
       workbox-window: 7.3.0
     transitivePeerDependencies:
       - supports-color
 
-  vite@7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2):
+  vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2):
     dependencies:
       esbuild: 0.27.4
       fdir: 6.5.0(picomatch@4.0.3)
@@ -5623,9 +5616,9 @@ snapshots:
       tsx: 4.19.2
       yaml: 2.8.2
 
-  vitefu@1.1.1(vite@7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)):
+  vitefu@1.1.1(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)):
     optionalDependencies:
-      vite: 7.3.1(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
+      vite: 7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
 
   vue-eslint-parser@10.2.0(eslint@9.39.4(jiti@2.6.1)):
     dependencies:
