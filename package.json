@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "remsg": "1.2.1",
-    "svelte": "5.55.5",
+    "svelte": "5.55.7",
     "svelte-multiselect": "11.7.0"
   },
   "devDependencies": {
