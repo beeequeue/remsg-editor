@@ -25,7 +25,7 @@
     "typecheck": "svelte-check"
   },
   "resolutions": {
-    "esbuild": "0.28.0"
+    "esbuild": "0.28.1"
   },
   "dependencies": {
     "remsg": "1.2.1",
