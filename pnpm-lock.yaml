@@ -49,7 +49,7 @@ importers:
         version: 5.0.5(rollup@2.79.2)
       '@sveltejs/vite-plugin-svelte':
         specifier: 6.2.4
-        version: 6.2.4(svelte@5.55.7)(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
+        version: 6.2.4(svelte@5.55.7)(vite@7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
       '@tsconfig/strictest':
         specifier: 2.0.8
         version: 2.0.8
@@ -73,7 +73,7 @@ importers:
         version: 66.6.8
       '@unocss/vite':
         specifier: 66.6.8
-        version: 66.6.8(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
+        version: 66.6.8(vite@7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
       buffer:
         specifier: 6.0.3
         version: 6.0.3
@@ -100,16 +100,16 @@ importers:
         version: 2.13.1
       svelte-check:
         specifier: 4.4.6
-        version: 4.4.6(picomatch@4.0.3)(svelte@5.55.7)(typescript@5.9.3)
+        version: 4.4.6(picomatch@4.0.4)(svelte@5.55.7)(typescript@5.9.3)
       typescript:
         specifier: 5.9.3
         version: 5.9.3
       vite:
-        specifier: 7.3.2
-        version: 7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
+        specifier: 7.3.5
+        version: 7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
       vite-plugin-pwa:
         specifier: 1.2.0
-        version: 1.2.0(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))(workbox-build@7.3.0)(workbox-window@7.3.0)
+        version: 1.2.0(vite@7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))(workbox-build@7.3.0)(workbox-window@7.3.0)
 
 packages:
 
@@ -2784,8 +2784,8 @@ packages:
       '@vite-pwa/assets-generator':
         optional: true
 
-  vite@7.3.2:
-    resolution: {integrity: sha512-Bby3NOsna2jsjfLVOHKes8sGwgl4TT0E6vvpYgnAYDIF/tie7MRaFthmKuHx1NSXjiTueXH3do80FMQgvEktRg==}
+  vite@7.3.5:
+    resolution: {integrity: sha512-KuOaNhcnGFN2zIPGA7wRmzF+lJA1sea7rHq17aiJ++9lzY1WWG6Jpwqwe1KNbRVPIqHmr8GLYx7jbrQcN/7/ww==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -4008,24 +4008,24 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@sveltejs/vite-plugin-svelte-inspector@5.0.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.7)(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)))(svelte@5.55.7)(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))':
+  '@sveltejs/vite-plugin-svelte-inspector@5.0.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.7)(vite@7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)))(svelte@5.55.7)(vite@7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 6.2.4(svelte@5.55.7)(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
+      '@sveltejs/vite-plugin-svelte': 6.2.4(svelte@5.55.7)(vite@7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
       debug: 4.4.3
       svelte: 5.55.7
-      vite: 7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
+      vite: 7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
     transitivePeerDependencies:
       - supports-color
 
-  '@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.7)(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))':
+  '@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.7)(vite@7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte-inspector': 5.0.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.7)(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)))(svelte@5.55.7)(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
+      '@sveltejs/vite-plugin-svelte-inspector': 5.0.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.7)(vite@7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)))(svelte@5.55.7)(vite@7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
       deepmerge: 4.3.1
       magic-string: 0.30.21
       obug: 2.1.1
       svelte: 5.55.7
-      vite: 7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
-      vitefu: 1.1.1(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
+      vite: 7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
+      vitefu: 1.1.1(vite@7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))
     transitivePeerDependencies:
       - supports-color
 
@@ -4250,7 +4250,7 @@ snapshots:
       '@unocss/rule-utils': 66.6.8
       css-tree: 3.2.1
 
-  '@unocss/vite@66.6.8(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))':
+  '@unocss/vite@66.6.8(vite@7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))':
     dependencies:
       '@jridgewell/remapping': 2.3.5
       '@unocss/config': 66.6.8
@@ -4261,7 +4261,7 @@ snapshots:
       pathe: 2.0.3
       tinyglobby: 0.2.16
       unplugin-utils: 0.3.1
-      vite: 7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
+      vite: 7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
 
   acorn-jsx@5.3.2(acorn@8.15.0):
     dependencies:
@@ -4611,7 +4611,7 @@ snapshots:
       eslint: 9.39.4(jiti@2.6.1)
       pathe: 2.0.3
       pnpm-workspace-yaml: 1.1.2
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
 
   eslint-plugin-regexp@2.10.0(eslint@9.39.4(jiti@2.6.1)):
     dependencies:
@@ -4772,10 +4772,6 @@ snapshots:
   fastq@1.18.0:
     dependencies:
       reusify: 1.0.4
-
-  fdir@6.5.0(picomatch@4.0.3):
-    optionalDependencies:
-      picomatch: 4.0.3
 
   fdir@6.5.0(picomatch@4.0.4):
     optionalDependencies:
@@ -5441,11 +5437,11 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-check@4.4.6(picomatch@4.0.3)(svelte@5.55.7)(typescript@5.9.3):
+  svelte-check@4.4.6(picomatch@4.0.4)(svelte@5.55.7)(typescript@5.9.3):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       chokidar: 4.0.3
-      fdir: 6.5.0(picomatch@4.0.3)
+      fdir: 6.5.0(picomatch@4.0.4)
       picocolors: 1.1.1
       sade: 1.8.1
       svelte: 5.55.7
@@ -5513,8 +5509,8 @@ snapshots:
 
   tinyglobby@0.2.15:
     dependencies:
-      fdir: 6.5.0(picomatch@4.0.3)
-      picomatch: 4.0.3
+      fdir: 6.5.0(picomatch@4.0.4)
+      picomatch: 4.0.4
 
   tinyglobby@0.2.16:
     dependencies:
@@ -5537,7 +5533,7 @@ snapshots:
 
   ts-declaration-location@1.0.7(typescript@5.9.3):
     dependencies:
-      picomatch: 4.0.3
+      picomatch: 4.0.4
       typescript: 5.9.3
 
   tsx@4.19.2:
@@ -5609,25 +5605,25 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-plugin-pwa@1.2.0(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))(workbox-build@7.3.0)(workbox-window@7.3.0):
+  vite-plugin-pwa@1.2.0(vite@7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2))(workbox-build@7.3.0)(workbox-window@7.3.0):
     dependencies:
       debug: 4.4.3
       pretty-bytes: 6.1.1
       tinyglobby: 0.2.15
-      vite: 7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
+      vite: 7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
       workbox-build: 7.3.0
       workbox-window: 7.3.0
     transitivePeerDependencies:
       - supports-color
 
-  vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2):
+  vite@7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2):
     dependencies:
       esbuild: 0.28.1
-      fdir: 6.5.0(picomatch@4.0.3)
-      picomatch: 4.0.3
+      fdir: 6.5.0(picomatch@4.0.4)
+      picomatch: 4.0.4
       postcss: 8.5.6
       rollup: 4.52.3
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
     optionalDependencies:
       fsevents: 2.3.3
       jiti: 2.6.1
@@ -5635,9 +5631,9 @@ snapshots:
       tsx: 4.19.2
       yaml: 2.8.2
 
-  vitefu@1.1.1(vite@7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)):
+  vitefu@1.1.1(vite@7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)):
     optionalDependencies:
-      vite: 7.3.2(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
+      vite: 7.3.5(jiti@2.6.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.8.2)
 
   vue-eslint-parser@10.2.0(eslint@9.39.4(jiti@2.6.1)):
     dependencies:
