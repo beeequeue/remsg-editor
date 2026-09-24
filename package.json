@@ -72,9 +72,9 @@
       "jsonc-eslint-parser": "-",
       "toml-eslint-parser": "-",
       "yaml-eslint-parser": "-",
-      "is-core-module": "npm:@nolyfill/is-core-module@^1",
-      "safe-buffer": "npm:@nolyfill/safe-buffer@^1",
-      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@^1"
+      "is-core-module": "npm:@nolyfill/is-core-module@1.0.39",
+      "safe-buffer": "npm:@nolyfill/safe-buffer@1.0.44",
+      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@1.0.44"
     }
   }
 }
