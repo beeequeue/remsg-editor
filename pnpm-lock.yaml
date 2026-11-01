@@ -37,7 +37,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: 5.4.1
-        version: 5.4.1(eslint-plugin-svelte@3.22.0(eslint@9.39.5(jiti@2.6.1))(svelte@5.57.3(@typescript-eslint/types@8.45.0)))(eslint@9.39.5(jiti@2.6.1))(svelte-eslint-parser@1.8.0(svelte@5.57.3(@typescript-eslint/types@8.45.0)))(typescript@5.9.3)
+        version: 5.4.1(eslint-plugin-svelte@3.23.1(eslint@9.39.5(jiti@2.6.1))(svelte@5.57.3(@typescript-eslint/types@8.45.0)))(eslint@9.39.5(jiti@2.6.1))(svelte-eslint-parser@1.8.0(svelte@5.57.3(@typescript-eslint/types@8.45.0)))(typescript@5.9.3)
       '@iconify-json/lucide':
         specifier: 1.2.150
         version: 1.2.150
@@ -81,8 +81,8 @@ importers:
         specifier: 9.39.5
         version: 9.39.5(jiti@2.6.1)
       eslint-plugin-svelte:
-        specifier: 3.22.0
-        version: 3.22.0(eslint@9.39.5(jiti@2.6.1))(svelte@5.57.3(@typescript-eslint/types@8.45.0))
+        specifier: 3.23.1
+        version: 3.23.1(eslint@9.39.5(jiti@2.6.1))(svelte@5.57.3(@typescript-eslint/types@8.45.0))
       lint-staged:
         specifier: 16.4.0
         version: 16.4.0
@@ -1742,8 +1742,8 @@ packages:
     peerDependencies:
       eslint: '>=8.44.0'
 
-  eslint-plugin-svelte@3.22.0:
-    resolution: {integrity: sha512-O3qn0NePTWta+1o25dIThqeEP/hEQ3VxDK2LVO8SQ5wG9umLMvulK+m1yQ4JGOb2Pkl8IB0G1lpRV/HXDXSLTQ==}
+  eslint-plugin-svelte@3.23.1:
+    resolution: {integrity: sha512-+w86Jlx4IRUuuvtqD6j4njql+akx+81JnpvbN5de3AV5iq2SexvST/Jr51CiTlKeY0i+vhoKjPO/ywFKIP75sA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.1 || ^9.0.0 || ^10.0.0
@@ -3000,7 +3000,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@antfu/eslint-config@5.4.1(eslint-plugin-svelte@3.22.0(eslint@9.39.5(jiti@2.6.1))(svelte@5.57.3(@typescript-eslint/types@8.45.0)))(eslint@9.39.5(jiti@2.6.1))(svelte-eslint-parser@1.8.0(svelte@5.57.3(@typescript-eslint/types@8.45.0)))(typescript@5.9.3)':
+  '@antfu/eslint-config@5.4.1(eslint-plugin-svelte@3.23.1(eslint@9.39.5(jiti@2.6.1))(svelte@5.57.3(@typescript-eslint/types@8.45.0)))(eslint@9.39.5(jiti@2.6.1))(svelte-eslint-parser@1.8.0(svelte@5.57.3(@typescript-eslint/types@8.45.0)))(typescript@5.9.3)':
     dependencies:
       '@antfu/install-pkg': 1.1.0
       '@clack/prompts': 0.11.0
@@ -3029,7 +3029,7 @@ snapshots:
       parse-gitignore: 2.0.0
       vue-eslint-parser: 10.2.0(eslint@9.39.5(jiti@2.6.1))
     optionalDependencies:
-      eslint-plugin-svelte: 3.22.0(eslint@9.39.5(jiti@2.6.1))(svelte@5.57.3(@typescript-eslint/types@8.45.0))
+      eslint-plugin-svelte: 3.23.1(eslint@9.39.5(jiti@2.6.1))(svelte@5.57.3(@typescript-eslint/types@8.45.0))
       svelte-eslint-parser: 1.8.0(svelte@5.57.3(@typescript-eslint/types@8.45.0))
     transitivePeerDependencies:
       - supports-color
@@ -3893,7 +3893,7 @@ snapshots:
   '@jridgewell/gen-mapping@0.3.8':
     dependencies:
       '@jridgewell/set-array': 1.2.1
-      '@jridgewell/sourcemap-codec': 1.5.5
+      '@jridgewell/sourcemap-codec': 1.6.0
       '@jridgewell/trace-mapping': 0.3.25
 
   '@jridgewell/remapping@2.3.5':
@@ -4729,10 +4729,10 @@ snapshots:
       regexp-ast-analysis: 0.7.1
       scslre: 0.3.0
 
-  eslint-plugin-svelte@3.22.0(eslint@9.39.5(jiti@2.6.1))(svelte@5.57.3(@typescript-eslint/types@8.45.0)):
+  eslint-plugin-svelte@3.23.1(eslint@9.39.5(jiti@2.6.1))(svelte@5.57.3(@typescript-eslint/types@8.45.0)):
     dependencies:
       '@eslint-community/eslint-utils': 4.9.0(eslint@9.39.5(jiti@2.6.1))
-      '@jridgewell/sourcemap-codec': 1.5.5
+      '@jridgewell/sourcemap-codec': 1.6.0
       eslint: 9.39.5(jiti@2.6.1)
       esutils: 2.0.3
       globals: 16.4.0
@@ -5621,7 +5621,7 @@ snapshots:
   terser@5.37.0:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.15.0
+      acorn: 8.19.0
       commander: 2.20.3
       source-map-support: 0.5.21
 
