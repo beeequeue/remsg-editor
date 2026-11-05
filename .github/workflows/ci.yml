@@ -23,7 +23,7 @@ jobs:
         id: cache
         run: echo "path=$(pnpm store path)" >> $GITHUB_OUTPUT
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         with:
           path: ${{ steps.cache.outputs.path }}
           key: v1-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -51,7 +51,7 @@ jobs:
         id: cache
         run: echo "path=$(pnpm store path)" >> $GITHUB_OUTPUT
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         with:
           path: ${{ steps.cache.outputs.path }}
           key: v1-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -82,7 +82,7 @@ jobs:
         id: cache
         run: echo "path=$(pnpm store path)" >> $GITHUB_OUTPUT
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         with:
           path: ${{ steps.cache.outputs.path }}
           key: v1-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
